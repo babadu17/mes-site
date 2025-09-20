@@ -3,121 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mes projets</title>
-  <link rel="icon" href="static/mon_icon.png" type="image/x-icon">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
-    }
-
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 40px;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 280px;
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      width: 80px;
-      margin-bottom: 15px;
-    }
-
-    .card h2 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #2c3e50;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .card a {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #3498db;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-
-    .card a:hover {
-      background-color: #2980b9;
-    }
-
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-
-    footer a {
-      color: #1abc9c;
-      text-decoration: none;
-    }
-  </style>
+  <title>Mes Sites</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    Mes projets
-  </header>
-
   <div class="container">
-    <div class="card">
-      <img src="static/globe.png" alt="Première page">
-      <h2>Ma première page</h2>
-      <p>Mon tout premier site hébergé sur Render.</p>
-      <a href="https://mon-site-gobm.onrender.com">Voir le site</a>
-    </div>
+    <h1>🌐 Bienvenue sur mes sites</h1>
+    <p>Sélectionne un site ci-dessous :</p>
 
-    <div class="card">
-      <img src="static/cadena.png" alt="Codeur/Décodeur">
-      <h2>Codeur/Décodeur</h2>
-      <p>Un outil pour encoder et décoder des messages secrets.</p>
-      <a href="https://message-coder.onrender.com">Voir le site</a>
-    </div>
+    <div class="sites">
 
-    <div class="card">
-      <img src="static/calandrier.png" alt="Événement du jour">
-      <h2>Événement du jour</h2>
-      <p>Chaque jour un événement historique différent.</p>
-      <a href="https://evenement-du-jour.onrender.com">Voir le site</a>
+      <!-- Site 1 -->
+      <a href="https://evenement-du-jour.onrender.com" class="site-card">
+        <img src="static/globe.png" alt="Globe">
+        <span>Événement du jour</span>
+      </a>
+
+      <!-- Site 2 -->
+      <a href="https://ton-deuxieme-site.onrender.com" class="site-card">
+        <img src="static/cadena.png" alt="Cadena">
+        <span>Deuxième site</span>
+      </a>
+
+      <!-- Site 3 -->
+      <a href="https://ton-troisieme-site.onrender.com" class="site-card">
+        <img src="static/calandrier.png" alt="Calendrier">
+        <span>Troisième site</span>
+      </a>
+
     </div>
   </div>
-
-  <footer>
-    Créé par <a href="#">baba</a>
-  </footer>
 </body>
 </html>
