@@ -2,120 +2,40 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mes projets</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-
-      /* Ajout pour forcer le footer en bas */
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-    }
-    h1 {
-      margin: 0;
-    }
-    .container {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin: 40px auto;
-      flex-wrap: wrap;
-      flex: 1; /* prend tout l’espace restant */
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 250px;
-      padding: 20px;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 15px;
-    }
-    .card h2 {
-      font-size: 20px;
-      margin: 10px 0;
-      color: #2c3e50;
-    }
-    .card p {
-      font-size: 14px;
-      color: #555;
-      min-height: 40px;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 10px;
-      text-decoration: none;
-      color: white;
-      background: #3498db;
-      padding: 8px 16px;
-      border-radius: 6px;
-      transition: background 0.3s;
-    }
-    .card a:hover {
-      background: #2980b9;
-    }
-    footer {
-      margin-top: auto; /* pousse le footer en bas */
-      padding: 20px;
-      background: #2c3e50;
-      color: white;
-    }
-    footer a {
-      color: #1abc9c;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
   <header>
-    <h1>🚀 Mes projets</h1>
+    🚀 Mes projets
   </header>
 
-  <div class="container">
-    <!-- Projet 1 -->
+  <main class="container">
     <div class="card">
-      <img src="static/globe.png" alt="Globe">
+      <img src="static/globe.png" alt="Logo première page">
       <h2>Ma première page</h2>
       <p>Mon tout premier site hébergé sur Render.</p>
       <a href="https://ma-premiere-page.onrender.com" target="_blank">Voir le site</a>
     </div>
 
-    <!-- Projet 2 -->
     <div class="card">
-      <img src="static/cadenas.png" alt="Cadenas">
+      <img src="static/padlock.png" alt="Logo codeur/décodeur">
       <h2>Codeur/Décodeur</h2>
       <p>Un outil pour encoder et décoder des messages secrets.</p>
-      <a href="https://message-coder.onrender.com" target="_blank">Voir le site</a>
+      <a href="https://codeur-decodeur.onrender.com" target="_blank">Voir le site</a>
     </div>
 
-    <!-- Projet 3 -->
     <div class="card">
-      <img src="static/calendrier.png" alt="Calendrier">
+      <img src="static/calendar.png" alt="Logo calendrier">
       <h2>Événement du jour</h2>
       <p>Chaque jour un événement historique différent.</p>
       <a href="https://evenement-du-jour.onrender.com" target="_blank">Voir le site</a>
     </div>
-  </div>
+  </main>
 
   <footer>
-    <p>Créé par <a href="https://github.com/babadu17">babadu17</a></p>
+    Créé par <a href="https://github.com/babadu17" target="_blank">babadu17</a>
   </footer>
 </body>
 </html>
